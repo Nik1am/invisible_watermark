@@ -13,4 +13,4 @@ for px in data:
 
 im2 = img.copy()
 im2.putdata(newdata)
-im2.save("dec.png")
+im2.convert("P", palette = Image.ADAPTIVE, colors = 8).save("dec.png")
